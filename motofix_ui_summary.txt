@@ -1,0 +1,76 @@
+PROJECT OVERVIEW
+----------------
+Main Purpose: MotoFix is a full-stack motorcycle service and repair management application. It allows customers to register their vehicles, book service appointments, track active repairs in real-time, view service history, and rate their experience. It also provides a mechanic portal to manage bookings, track inventory, update service statuses, and generate bills.
+
+Target Audience: Motorcycle owners (Customers) seeking a convenient way to manage their bike maintenance, and workshop staff/technicians (Mechanics) looking for a streamlined workflow management tool.
+
+TECH STACK
+----------
+Framework / Library: 
+- Frontend: React.js (Bootstrapped with Vite)
+- Backend: Node.js, Express, MongoDB (Mongoose)
+
+UI Library / Styling Approach: 
+- Tailwind CSS (Heavily relies on utility classes for custom styling)
+- Custom CSS for base styles in `index.css`
+
+Component Library: 
+- No heavy UI framework (like MUI or Ant Design) is used.
+- Icons are provided by `lucide-react`.
+- Routing is handled via `react-router-dom`.
+
+CURRENT STRUCTURE
+-----------------
+Main Pages / Routes:
+1. Auth: 
+   - /login
+   - /register
+2. Customer Portal:
+   - / (Customer Dashboard / Home)
+   - /bikes (My Garage & Bike Registration)
+   - /book (Service Booking Wizard)
+   - /bookings (Active Bookings & Service History)
+   - /notifications (Updates & Alerts)
+3. Mechanic Portal:
+   - /mechanic (Mechanic Dashboard)
+   - /mechanic/schedule (Upcoming Appointments)
+   - /mechanic/active-repairs (Ongoing Jobs & Status Updates)
+   - /mechanic/inventory (Parts Management)
+   - /mechanic/history (Past Completed Services)
+
+Key Components:
+- Layouts: `CustomerLayout.jsx` (Sidebar navigation wrapper), `MechanicLayout.jsx`, `AuthLayout.jsx`
+- Reusable UI elements are primarily built inline using Tailwind CSS within the page components themselves.
+
+File Structure (UI relevant):
+- /client/src/App.jsx (Main Router)
+- /client/src/index.css (Global styles)
+- /client/src/layouts/ (Navigation and wrappers)
+- /client/src/pages/customer/ (Customer-facing views)
+- /client/src/pages/mechanic/ (Staff-facing views)
+- /client/src/pages/ (Login/Register)
+
+CURRENT UI DESCRIPTION
+----------------------
+Look and Feel: 
+The Customer Portal recently underwent a modern "SaaS dashboard" redesign. It features a clean, highly professional aesthetic.
+
+Colors & Theme:
+- Background: Very light slate (`bg-[#F8FAFC]` or `bg-slate-50`)
+- Cards & Containers: Crisp white (`bg-white`) with thin, subtle borders (`border-slate-200`)
+- Primary Accent: Blue (`blue-600` for buttons, active sidebar links, and highlights)
+- Status Colors: Emerald green (completed/success), Amber (pending/warnings)
+- Typography: Deep slate (`text-slate-900`) for headers, muted slate (`text-slate-500`) for secondary text.
+
+Layout & Spacing:
+- Spacious padding (`p-6`, `p-8`) to prevent clutter.
+- Soft rounded corners (`rounded-xl` or `rounded-2xl`).
+- Micro-interactions include `hover:shadow-md`, `active:scale-95`, and smooth transition classes.
+
+WHAT I WANT TO CHANGE
+---------------------
+Specific UI improvements or redesigns I'm aiming for:
+[USER: Describe what you want to change here. For example: "I want to apply the modern SaaS design language used in the Customer Portal to the Mechanic Portal." or "I want to redesign the Login/Register pages."]
+
+Any reference designs, styles, or examples I like:
+[USER: Insert links to dribbble, specific websites, or attached image names that you want the AI to use as inspiration.]
